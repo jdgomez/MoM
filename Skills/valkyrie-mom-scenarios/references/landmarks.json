@@ -1,0 +1,50 @@
+{
+  "_format": "Global, reusable catalog of notable furniture/decor landmarks per tile side, shared across all scenarios in this project (same convention as doors.md for wall openness). Keys are the side= value from tiles.ini. Coordinates are LOCAL, unrotated (the .dds image as-is, top-left corner = origin, x grows right, y grows downward-but-negative -- same convention as geometry.md and tile_box() in validate_scenario.py: the tile occupies x in [0,width], y in [-height,0]). Each entry: name (short tag), box [xmin, xmax, ymin, ymax] in squares, note. Boxes are deliberately generous/approximate (eyeballed from a grid-overlay preview image, not pixel-measured) and only cover clearly chunky furniture/fixtures -- thin wall trim, baseboards, and small hanging picture frames are generally NOT catalogued unless they were big enough to matter for a real placement decision. Confidence is 'eyeballed', not pixel-verified -- treat validate_scenario.py's landmark warning as a prompt to look at the tile_door_preview.py image yourself, not as ground truth.",
+  "TileSideEntryHall": [
+    {"name": "tall cabinet/wardrobe (west wall)", "box": [0, 1.3, -2.3, -0.7], "note": "brass-fronted cabinet against the west wall"},
+    {"name": "statue niche with potted plants (north wall, center)", "box": [2, 4.3, -0.8, 0], "note": "small bust statue flanked by two potted plants"},
+    {"name": "side table and red armchair (south, center-right)", "box": [2.7, 5.2, -3.5, -2.2], "note": "reading corner near the south wall"}
+  ],
+  "TileSideHall2": [
+    {"name": "writing desk with papers/lamp (north wall, center)", "box": [2.3, 4.3, -1, 0], "note": "desk against the north wall, papers and a lamp on top"},
+    {"name": "red armchair (center)", "box": [3.3, 4.6, -2.8, -1.6], "note": "freestanding armchair, not against a wall"}
+  ],
+  "TileSideLounge": [
+    {"name": "reading nook: rug + 2 armchairs + side table/lamp (north wall, west-of-center)", "box": [0.2, 5.7, -2.1, 0], "note": "big cluster along most of the north wall -- leaves the NE corner (x>5.7) clearer for a north-wall door"},
+    {"name": "corner bench/table with vase (northeast corner)", "box": [5.7, 7, -2.7, -0.4], "note": "small bench and side table in the NE corner"},
+    {"name": "round table on a round rug (center)", "box": [3, 5.3, -4.3, -2], "note": "freestanding round table, center of the room"},
+    {"name": "floral sofa (east wall)", "box": [5.3, 7, -3.6, -1.9], "note": "cream floral loveseat/sofa against the east wall"},
+    {"name": "dark wood cabinet (east wall, lower)", "box": [6.3, 7, -4.5, -3.5], "note": "cabinet below the floral sofa"},
+    {"name": "ornate medallion rug + round side table (southwest)", "box": [0.3, 3.3, -5.7, -2.9], "note": "large red patterned rug with a small round table on it"},
+    {"name": "tufted ottoman (south-center)", "box": [2.8, 4, -5, -3.7], "note": "freestanding ottoman/footstool"},
+    {"name": "fireplace (south wall, right-of-center)", "box": [4.6, 6.3, -6.7, -5], "note": "arched fireplace built into the south wall"},
+    {"name": "long tufted sofa (south wall, west)", "box": [0.3, 3, -6.7, -5.4], "note": "gold/mustard tufted sofa against the south wall"},
+    {"name": "side table (south, center)", "box": [3, 3.7, -6.7, -5.7], "note": "small table between the sofa and the fireplace"},
+    {"name": "curtained windows (west wall, full height)", "box": [0, 0.3, -7, 0], "note": "thin strip but runs the whole west wall -- avoid a west-wall door here"}
+  ],
+  "TileSideStudy": [
+    {"name": "fireplace with mantle clutter (north wall, left-of-center)", "box": [1.8, 3.3, -1, 0], "note": "urns/candlesticks on the mantle"},
+    {"name": "small jars/pots (north wall, either side of fireplace)", "box": [0.3, 1, -1, 0], "note": "minor clutter, low collision priority"},
+    {"name": "rug + reading chair with books (center)", "box": [2.5, 4.7, -3, -1], "note": "red armchair on a rug, center of the room"},
+    {"name": "writing desk (south wall, center)", "box": [2, 4, -3.5, -2.7], "note": "desk against the south wall -- this is also where TokenExploreEstudio's 'force the locked door' flavor text lives, don't confuse the two"},
+    {"name": "window (west wall, center)", "box": [0, 0.5, -2.3, -1], "note": "narrow window strip"},
+    {"name": "bookshelf/cabinet with jars and books (east wall, lower)", "box": [5, 6.7, -3.5, -2.5], "note": "reaches the south wall corner too -- narrows the safe zone there"}
+  ],
+  "TileSideHallStairs": [
+    {"name": "window (west wall, center)", "box": [0, 0.5, -2.3, -1], "note": "landing window"},
+    {"name": "picture frames leaning on the floor (west, bottom-left)", "box": [0, 1.3, -3.2, -2.6], "note": "leaning frames, not wall-mounted"},
+    {"name": "picture frames (west, top-left)", "box": [0, 1.3, -1, -0.5], "note": "wall-mounted, near the window"},
+    {"name": "staircase itself (center)", "box": [1.3, 5, -3.5, 0], "note": "the stairs/runner carpet -- not furniture to avoid exactly, but not a clean spot for an icon either"},
+    {"name": "hanging picture + small shelf clutter (east wall)", "box": [5, 7, -3.4, -1], "note": "framed picture plus a shelf with jars/books lower down; leaves a rough gap around y=-2.3..-2.6 and a thin sliver near the top corner"}
+  ],
+  "TileSideAttic": [
+    {"name": "cobwebbed dresser (northwest corner)", "box": [0, 1.7, -1.7, 0], "note": ""},
+    {"name": "old table + barrel (north, center-left)", "box": [1.7, 3.7, -1, 0], "note": ""},
+    {"name": "window nook, beyond the internal wall gap (northeast)", "box": [5.7, 7, -1.7, 0], "note": "separate zone across the tile's own internal gap, see doors.md note on Attic"},
+    {"name": "cloth-covered furniture (west wall, two pieces)", "box": [0, 1.3, -4.6, -2.3], "note": "two sheet-covered items stacked along the west wall"},
+    {"name": "sheet-covered armchair (center)", "box": [2.5, 5, -4.8, -3], "note": "good flavor spot for a monster spawn (something emerging from under the sheet) -- not necessarily bad to place a monster ON this one"},
+    {"name": "old crates (southwest)", "box": [0, 1.7, -6.3, -4.6], "note": ""},
+    {"name": "floor hatch/skylight (south wall, center-left)", "box": [1.7, 2.7, -7, -6], "note": ""},
+    {"name": "crates/shelving (east wall, lower)", "box": [5.7, 7, -7, -3.7], "note": ""}
+  ]
+}

@@ -1,0 +1,45 @@
+.,Spanish
+quest.name,Los Ecos de la Casa Ashworth
+quest.description,"Una casa a las afueras del pueblo lleva semanas dando que hablar: luces que se encienden solas, gritos ahogados en plena noche. Los investigadores deciden entrar antes de que ocurra una desgracia mayor. Solo caja base."
+EventInicio.text,"Los rumores sobre la casa Ashworth llevan semanas circulando por el pueblo: luces que parpadean tras las ventanas cerradas, siluetas que se mueven donde no debería haber nadie. Nadie ha entrado desde que la familia se marchó, hace ya tres años.\n\nEsta noche, decidís comprobarlo con vuestros propios ojos."
+EventInicio.button1,Continuar
+EventLlegada.text,"La puerta principal cede con un crujido. El vestíbulo huele a polvo y a algo más, algo dulzón que no sabéis identificar.\n\nColoca la loseta Pasillo de entrada {MAD20} y la ficha de Investigadores en el lugar señalado."
+EventLlegada.button1,Continuar
+TokenExplorePasillo.text,"Un pasillo se adentra en la penumbra de la casa."
+TokenExplorePasillo.button1,{action} Explorar
+EventEntraPasillo.text,"El pasillo se abre ante vosotros. A la derecha, una puerta entornada deja ver lo que parece un salón; a la izquierda, otra puerta permanece cerrada -- probablemente un estudio.\n\nColoca la loseta Pasillo 2 {MAD20} en el lugar señalado."
+EventEntraPasillo.button1,Continuar
+TokenExploreSalon.text,"La puerta del salón está entornada. Un frío poco natural se cuela por la rendija."
+TokenExploreSalon.button1,{action} Abrir
+EventEntraSalon.text,"El salón conserva los muebles cubiertos con sábanas, como si la familia planeara volver. El aire aquí es glacial.\n\nColoca la loseta Salón {MAD20} en el lugar señalado."
+EventEntraSalon.button1,Continuar
+EventApareceFantasma.text,"Una de las sábanas se agita sin que sopre ninguna corriente. Una figura pálida y translúcida emerge de ella, mirándoos con una tristeza antigua."
+EventApareceFantasma.button1,Continuar
+SpawnFantasma1.text,"El fantasma flota hacia vosotros, gélido y silencioso."
+SpawnFantasma1.button1,Continuar
+EventFantasmaDerrotado.text,"La aparición se deshace en volutas de niebla. Entre los restos de la sábana encontráis un guardapelo de plata, frío al tacto, con una fotografía familiar dentro."
+EventFantasmaDerrotado.button1,Continuar
+TokenExploreEstudio.text,"Una puerta de madera maciza, cerrada con llave por dentro."
+TokenExploreEstudio.button1,{action} Forzar
+EventEntraEstudio.text,"La cerradura cede tras varios golpes. El estudio está en penumbra, con estanterías volcadas y papeles esparcidos por el suelo.\n\nColoca la loseta Estudio {MAD20} en el lugar señalado."
+EventEntraEstudio.button1,Continuar
+EventApareceSectario.text,"Un hombre encapuchado se incorpora de detrás del escritorio, con un cuchillo ritual en la mano. No parece dispuesto a dejaros marchar."
+EventApareceSectario.button1,Continuar
+SpawnSectario1.text,"El sectario se abalanza para defender lo que quiera que esté escondiendo."
+SpawnSectario1.button1,Continuar
+EventSectarioDerrotado.text,"En el bolsillo del sectario encontráis una llave de hierro oxidado y un diario. Las últimas páginas describen un ritual para 'abrir la puerta' en el ático de la casa. La llave, deducís, abre la puerta del pasillo que antes estaba sellada."
+EventSectarioDerrotado.button1,Continuar
+TokenExploreEscalera.text,"La llave de hierro encaja en una puerta que antes parecía solo una pared. Tras ella, una escalera sube hacia la oscuridad."
+TokenExploreEscalera.button1,{action} Subir
+EventEntraEscalera.text,"Los peldaños crujen bajo vuestro peso. El aire se vuelve más denso a cada paso, cargado de un olor a cera quemada.\n\nColoca la loseta Escalera {MAD20} en el lugar señalado."
+EventEntraEscalera.button1,Continuar
+TokenExploreAtico.text,"En lo alto de la escalera, una puerta baja e inclinada. De debajo se filtra una luz rojiza, parpadeante."
+TokenExploreAtico.button1,{action} Abrir
+EventEntraAtico.text,"El ático está dominado por un círculo ritual pintado con algo que preferís no identificar. Docenas de velas negras arden con una llama que no vacila. El diario del sectario tenía razón: la puerta está a punto de abrirse.\n\nColoca la loseta Ático {MAD20} en el lugar señalado."
+EventEntraAtico.button1,Continuar
+EventApareceHorrendo.text,"El círculo se resquebraja y algo cruza desde el otro lado: una masa de alas correosas y ojos incontables desciende chillando desde las vigas del techo."
+EventApareceHorrendo.button1,Continuar
+SpawnHorrendo1.text,"El Horrendo Cazador se lanza directo hacia vosotros."
+SpawnHorrendo1.button1,Continuar
+EventVictoria.text,"Con la criatura desterrada de vuelta a la oscuridad de donde vino, el círculo se apaga y las velas se extinguen a la vez. La casa Ashworth, por fin, queda en silencio.\n\nOs marcháis con el guardapelo, el diario... y la certeza de que algunas puertas es mejor no abrirlas."
+EventVictoria.button1,Finalizar

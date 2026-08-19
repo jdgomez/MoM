@@ -1,0 +1,33 @@
+{
+  "_format": "Global catalog of REAL painted doors per tile, replacing hand-guessed continuous positions. Keys are the side= value from tiles.ini. artGrid is [cols, rows] on the ART grid (1 unit = 1024/3 px, confirmed 2026-08-19 against real annotated in-game screenshots -- see references/doors.md). Each door entry is {col, row, wall}: col/row are 0-indexed ART-grid cell coordinates, UNROTATED (the tile as drawn, rotation=0). `wall` (north/south/east/west) is a DOCUMENTARY label describing the door's position in that original unrotated drawing ONLY -- it is derived from row/col (row 0 = north, last row = south, col 0 = west, last col = east) and MUST NOT be used directly to decide where a door ends up once a tile is placed with rotation != 0. Placement code must always go col,row -> local unrotated engine offset -> rotate (geometry.md's table) -> add the tile's anchor. See scripts/door_position.py and references/doors.md 'Two grids' section.",
+  "TileSideHall2": {
+    "artGrid": [6, 3],
+    "doors": [
+      {"col": 1, "row": 0, "wall": "north"},
+      {"col": 1, "row": 2, "wall": "south"},
+      {"col": 4, "row": 2, "wall": "south"}
+    ]
+  },
+  "TileSideStudy": {
+    "artGrid": [6, 3],
+    "doors": [
+      {"col": 4, "row": 2, "wall": "south"}
+    ]
+  },
+  "TileSideHallStairs": {
+    "artGrid": [6, 3],
+    "doors": [
+      {"col": 0, "row": 1, "wall": "west"}
+    ]
+  },
+  "TileSideLounge": {
+    "artGrid": [6, 6],
+    "doors": [],
+    "_note": "North wall checked 2026-08-19: no real door found, just furniture/decor (see references/landmarks.json). Other 3 walls not checked yet."
+  },
+  "TileSideAttic": {
+    "artGrid": [6, 6],
+    "doors": [],
+    "_note": "West wall checked 2026-08-19: no real door found, rows 0-3 have furniture, rows ~3.5-5.5 are clear wall. Other 3 walls not checked yet."
+  }
+}

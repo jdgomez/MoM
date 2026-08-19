@@ -1,0 +1,23 @@
+.,Spanish
+quest.name,Ejemplo: dos salas conectadas (una rotada)
+quest.description,"Escenario de referencia de dos salas y dos combates, usado como plantilla por la skill valkyrie-mom-scenarios. Solo caja base."
+EventInicio.text,"Una llamada de auxilio os ha conducido hasta una vieja casa a las afueras del pueblo."
+EventInicio.button1,Continuar
+EventSala1.text,"Entrais en un dormitorio revuelto.\n\nColoca la loseta Dormitorio 1 {MAD20} y la ficha de Investigadores en el lugar senalado."
+EventSala1.button1,Continuar
+EventApareceSectario.text,"Un sectario armado con un cuchillo se abalanza contra vosotros."
+EventApareceSectario.button1,Continuar
+SpawnSectario1.text,"El sectario os ataca."
+SpawnSectario1.button1,Continuar
+EventSectarioDerrotado.text,"Con el sectario derrotado, descubris una puerta oculta al fondo de la habitacion."
+EventSectarioDerrotado.button1,Continuar
+TokenPuertaSala2.text,"Una puerta de madera maciza."
+TokenPuertaSala2.button1,{action} Explorar
+EventEntrarSala2.text,"Cruzais la puerta y llegais a un estudio polvoriento.\n\nColoca la loseta Estudio {MAD20} en el lugar senalado."
+EventEntrarSala2.button1,Continuar
+EventApareceHorrendo.text,"Una masa de tentaculos y dientes emerge entre las estanterias: un Horrendo Cazador."
+EventApareceHorrendo.button1,Continuar
+SpawnHorrendo1.text,"El Horrendo Cazador se lanza contra vosotros."
+SpawnHorrendo1.button1,Continuar
+EventVictoria.text,"Con la criatura derrotada, la casa recupera la calma."
+EventVictoria.button1,Finalizar
